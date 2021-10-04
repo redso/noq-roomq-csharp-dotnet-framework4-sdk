@@ -7,7 +7,6 @@ using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.Web;
 using Newtonsoft.Json.Linq;
-using System.Net.Cache;
 using System.Diagnostics;
 
 namespace NoQ.RoomQ
@@ -141,7 +140,7 @@ namespace NoQ.RoomQ
          * @throws System.Exception
          * @throws InvalidTokenException|NotServingException
          */
-        public void Extend(ref HttpContext httpContext, int duration)
+        public void Extend(HttpContext httpContext, int duration)
         {
             string backend = this.GetBackend();
             try
