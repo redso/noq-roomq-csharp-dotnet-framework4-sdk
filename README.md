@@ -11,7 +11,7 @@ PM> Install-Package NoQ.RoomQ.SDK -Version 1.0.0
 
 # RoomQ Backend SDK - C#
 
-The [RoomQ](https://www.noq.hk/en/roomq) Backend SDK is used for server-side integration to your server. It was developed with PHP.
+The [RoomQ](https://www.noq.hk/en/roomq) Backend SDK is used for server-side integration to your server. It was developed with C#.
 
 ## High Level Logic
 
