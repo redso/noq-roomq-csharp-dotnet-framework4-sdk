@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>NoQ.RoomQ.SDK</id>
+    <version>1.0.0</version>
+    <title>NoQ RoomQ C# .Net Framework 4.5 SDK</title>
+    <authors>Red Soldier Limited</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/redso/noq-roomq-csharp-dotnet-framework4-sdk</projectUrl>
+    <description>NoQ RoomQ C# .Net Framework 4.5 SDK</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2021 (c) Red Soldier Limited. All rights reserved.</copyright>
+    <tags>NoQ RoomQ RedSo RedSoldier RedSoliderLimited</tags>
+  </metadata>
+</package>
