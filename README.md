@@ -34,7 +34,6 @@ To integrate with the SDK, you need to have the following information provided b
 2.  ROOM_SECRET
 3.  ROOMQ_TICKET_ISSUER
 4.  ROOMQ_STATUS_API
-5.  API_KEY
 
 ### Major steps
 
