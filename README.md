@@ -94,6 +94,7 @@ namespace WebApplication.Controllers
                 response.Add("redirect", validationResult.NeedRedirect());
                 if (validationResult.NeedRedirect())
                 {
+                    // The ticket issuer URL for registering the serving session
                     response.Add("url", validationResult.GetRedirectURL());
                 } else {
                     // Proceed to main logic
