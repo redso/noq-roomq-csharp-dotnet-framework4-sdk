@@ -4,7 +4,7 @@
 
 ```shell
 // Install via shell
-PM> Install-Package NoQ.RoomQ.SDK -Version 1.0.0
+PM> Install-Package NoQ.RoomQ.SDK
 
 // Search keywords: NoQ, RoomQ
 ```
@@ -95,11 +95,8 @@ namespace WebApplication.Controllers
                 if (validationResult.NeedRedirect())
                 {
                     response.Add("url", validationResult.GetRedirectURL());
-                }
-                else
-                {
-                    // Retrieve the expiry time of the ticket
-                    response.Add("serving", roomQ.GetServing());
+                } else {
+                    // Proceed to main logic
                 }
                 Log(response);
                 return response;
