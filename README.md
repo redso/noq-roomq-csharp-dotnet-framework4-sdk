@@ -247,5 +247,5 @@ As hash of URL will not send to server, hash information will be lost.
 ## Version Guidance
 
 | Version | Nuget           | .Net Framework Version |
-| ------- | --------------- | ---------------------- |
+| :------- | :--------------- | :---------------------- |
 | 1.x     | `NoQ.RoomQ.SDK` | 4.5                    |
