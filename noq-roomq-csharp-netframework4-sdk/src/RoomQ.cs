@@ -41,7 +41,7 @@ namespace NoQ.RoomQ
         /**
          * @return string|null
          */
-        public string GetToken(HttpContext httpContext = null)
+        private string GetToken(HttpContext httpContext = null)
         {
             if (httpContext != null)
             {
@@ -317,7 +317,7 @@ namespace NoQ.RoomQ
          * @throws 
          * @throws QueueStoppedException
          */
-        public string GetBackend()
+        private string GetBackend()
         {
             ManagedHttpClient client = new ManagedHttpClient(this.statusEndpoint);
             Response response = client.Get("/" + this.clientID);
