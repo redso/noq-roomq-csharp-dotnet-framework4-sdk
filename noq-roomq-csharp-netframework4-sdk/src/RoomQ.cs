@@ -69,7 +69,7 @@ namespace NoQ.RoomQ
         {
             string token = this.token;
             var request = httpContext.Request;
-            string currentUrl = (request.IsSecureConnection ? "https" : "http") + "://" + request.Url.Host + ":" + request.Url.Port + request.Url.LocalPath;
+            string currentUrl = request.Url.AbsoluteUri;
             bool needGenerateJWT = false;
             bool needRedirect = false;
 
@@ -306,9 +306,9 @@ namespace NoQ.RoomQ
 
         private string RemoveNoQToken(string currentUrl)
         {
-            string updated = Regex.Replace(currentUrl, "/([&]*)(noq_t=[^&]*)/i", "");
-            updated = Regex.Replace(updated, "/\\?&/i", "?");
-            return Regex.Replace(updated, "/\\?$/i", "");
+            string updated = Regex.Replace(currentUrl, "([&]*)(noq_t=[^&]*)", "");
+            updated = Regex.Replace(updated, "\\?&", "?");
+            return Regex.Replace(updated, "\\?$", "");
         }
 
         /**
