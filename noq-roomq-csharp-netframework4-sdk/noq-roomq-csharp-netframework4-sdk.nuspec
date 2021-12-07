@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>NoQ.RoomQ.SDK</id>
-    <version>1.0.0</version>
+    <id>NoQ.RoomQ.DotNet.Framework.SDK</id>
+    <version>1.0.4</version>
     <title>NoQ RoomQ C# .Net Framework 4.5 SDK</title>
     <authors>Red Soldier Limited</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
