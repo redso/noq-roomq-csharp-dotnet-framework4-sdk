@@ -142,6 +142,7 @@ namespace WebApplication.Controllers
                 // Ticket is not in serving state
                 Log(e.Message);
                 Log("Not Serving");
+                response.Add("serving", "NotServing");
             }
             catch (InvalidTokenException e)
             {
@@ -170,7 +171,7 @@ namespace WebApplication.Controllers
             {
                 // Extend Ticket's expiry time
                 // Please enable this feature in Web Portal as well
-                roomQ.Extend(ref httpContext, 60);
+                roomQ.Extend(httpContext, 60);
                 response.Add("serving", roomQ.GetServing());
             }
             catch (NotServingException e)
